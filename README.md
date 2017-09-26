@@ -1,2 +1,2 @@
-# Data-Structures-and-Algorithms
+# Data Structures and Algorithms
 Optimized code for various problems
