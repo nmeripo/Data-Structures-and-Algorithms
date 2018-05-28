@@ -7,7 +7,7 @@ class Sort:
         self.left = 0
         self.right = self.n - 1
 
-
+        
     """
     Bubble Sort is a simple sorting algorithm that repeatedly steps through the list 
     to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. 
@@ -80,6 +80,7 @@ class Sort:
             # Swap the found minimum element with
             # the first element
             arr[i], arr[min_idx] = arr[min_idx], arr[i]
+        
         return arr
 
 
@@ -126,8 +127,10 @@ class Sort:
 
             # arr[j] is not greater than key means key belongs at j+1
             arr[j + 1] = key
+        
         return arr
 
+    
     """
     Average: O(n*log(n))
     Best: O(n*log(n))
@@ -176,6 +179,7 @@ class Sort:
             else:
                 arr[k] = right_arr[j]
                 j += 1
+        
         return arr
 
 
@@ -232,6 +236,7 @@ class Sort:
                 arr[i], arr[j] = arr[j], arr[i]
 
         arr[i + 1], arr[right] = arr[right], arr[i + 1]
+        
         return i + 1
 
 
@@ -279,8 +284,6 @@ class Sort:
         #  A heap is based on an array just as a hashmap is based on an
         #  array. For a heap, the children of an element n are at index
         #  2n+1 for the left child and 2n+2 for the right child.
-
-
 
         arr = self.arr
         length = self.right
