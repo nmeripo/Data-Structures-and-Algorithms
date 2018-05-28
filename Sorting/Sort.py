@@ -1,4 +1,4 @@
- import random
+import random
 
 class Sort:
     def __init__(self, arr):
