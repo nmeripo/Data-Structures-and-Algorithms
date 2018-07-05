@@ -15,7 +15,7 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        
+        # Time Complexity : O (n * log k)
         heads = [head for head in lists if head]
         heapify(heads)
         result = None
